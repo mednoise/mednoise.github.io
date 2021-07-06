@@ -1,37 +1,36 @@
-## Welcome to GitHub Pages
+## mednoise
 
-You can use the [editor on GitHub](https://github.com/mednoise/mednoise.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+mednoise is currently under construction. it will be released on july 15.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+    #############################################################################################
+    
+                                         8I                                                     
+                                         8I                                                     
+                                         8I                              gg                     
+                                         8I                              ""                     
+      ,ggg,,ggg,,ggg,    ,ggg,     ,gggg,8I   ,ggg,,ggg,     ,ggggg,     gg     ,g,      ,ggg,  
+     ,8" "8P" "8P" "8,  i8" "8i   dP"  "Y8I  ,8" "8P" "8,   dP"  "Y8ggg  88    ,8'8,    i8" "8i 
+     I8   8I   8I   8I  I8, ,8I  i8'    ,8I  I8   8I   8I  i8'    ,8I    88   ,8'  Yb   I8, ,8I 
+    ,dP   8I   8I   Yb, `YbadP' ,d8,   ,d8b,,dP   8I   Yb,,d8,   ,d8'  _,88,_,8'_   8)  `YbadP' 
+    8P'   8I   8I   `Y8888P"Y888P"Y8888P"`Y88P'   8I   `Y8P"Y8888P"    8P""Y8P' "YY8P8P888P"Y888
+    
+    #############################################################################################
 
-### Markdown
+    Copyright 2021 Ravi Bandaru
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this package except in compliance with the License.
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mednoise/mednoise.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+    
+    #############################################################################################
+    
+    Welcome to mednoise, a python package that contains algorithms to handle and pre-process 
+    large amounts of image-based metadata to remove noise and enhance the accuracy of machine
+    learning and deep learning models for scientific research.
+    
+    #############################################################################################
