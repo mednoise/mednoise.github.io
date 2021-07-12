@@ -20,7 +20,7 @@ Focus
 As an open-source project, **mednoise** strives to improve the quality and power of computational research across the world. To this end, we encourage researchers to contribute their work and algorithms to mednoise so that we can improve, evolve, and change the future of research and medical imaging together.
 
 
-**mednoise** is designed as a tool for pipelines and workflow management systems that rely on medical image metadata (or at least the analysis of that metadata). It aims to create a future of medical imaging that is more accessible and utilizable in the constantly evolving field of medical technology.
+**mednoise** is designed as a tool for pipelines and workflow management systems that rely on medical image metadata (or at least the analysis of that metadata). It aims to create a future of medical imaging that is more accessible and utilizable in the constantly evolving field of bioinformatic research.
 
 
 ------------------
