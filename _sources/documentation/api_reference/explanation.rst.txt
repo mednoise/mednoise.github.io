@@ -1,0 +1,18 @@
+==========================
+mednoise API Explanations
+==========================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mednoise Hotspot
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The ``hotspot`` algorithm works under the fundamental assumption that the region of clinical significance on an image is the largest. Thus, by subdividing an image into various sizes, as specified by the parameters of ``hotspot``, one can create partitions of that image to be analyzed. When analyzing, ``hotspot`` determines if noise on the image is fully enclosed by a partition. Naturally, if the noise is able to be fully enclosed, then it is not of clinical significance as it is not the largest instance of noise on the image. ``hotspot`` removes all of these irrelevant noise partitions to yield the final image.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mednoise Branch
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The ``branch`` algorithm works under the fundamental assumption that the region of clinical significance on an image is easily identifiable and consistent across various similar-sized images. When given a pixel coordinate, ``branch`` iteratively finds all surrounding pixels, branching out across the entire figure and eventually selecting the entire figure that the input pixel was a part of. By taking the complement of this figure, the regions of unremarkable clinical significance are easily extrapolated. ``branch`` takes these regions and fills them with a constant color to silence the image's noise.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mednoise Artificial
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The ``artificial`` algorithm works under the fundamental assumption that areas of irrelevant noise will be similar across multiple images. Thus, by receiving a user-selected input matrix of irrelevant noise, the ``artificial`` algorithm searches all input images for a similar output matrix using a Jaccard-similarity function. This similarity function is one of the reasons why this algorithm is the most versatile out of the three. It can handle various image sizes and even transposed image structures. By isolating areas of insignificant noise and removing them, ``artificial`` quickly creates noiseless images without needing tuning (unlike ``branch`` and ``hotspot``).

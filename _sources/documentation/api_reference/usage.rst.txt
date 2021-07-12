@@ -1,0 +1,55 @@
+.. _api.usage:
+
+=========================
+mednoise API Usage Guide
+=========================
+
+.. currentmodule:: md
+
+Basic Functions
+~~~~~~~~~~~~~~~~~
+.. autosummary::
+   :toctree: api/
+
+   about
+
+Manual Algorithms
+~~~~~~~~~~~~~~~~~~~
+.. autosummary::
+   :toctree: api/
+
+   manual_merge
+   manual_find
+   manual_edit
+   manual_primer
+
+Hotspot Algorithms
+~~~~~~~~~~~~~~~~~~~
+.. autosummary::
+   :toctree: api/
+
+   hotspot_complete
+   hotspot_calculator
+   hotspot_analyzer
+   hotspot_isolator
+
+Branch Algorithms
+~~~~~~~~~~~~~~~~~~~
+.. autosummary::
+   :toctree: api/
+
+   branch_complete
+   branch_calculator
+   branch_analyzer
+   branch_isolator
+   
+Artificial Algorithms
+~~~~~~~~~~~~~~~~~~~~~~~
+.. autosummary::
+   :toctree: api/
+
+   artificial_complete
+   artificial_calculator
+   artificial_analyzer
+   artificial_isolator
+
