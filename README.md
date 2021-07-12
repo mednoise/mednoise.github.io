@@ -32,4 +32,4 @@ mednoise is licensed under the `Apache 2.0 License`
 
 ##### Acknowledgements:
 
-mednoise documentation created using Sphinx 4.0.3
+Documentation created using `Sphinx 4.0.3`
