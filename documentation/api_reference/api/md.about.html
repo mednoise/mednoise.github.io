@@ -1,0 +1,366 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>md.about &#8212; mednoise 0.2.3 documentation</title>
+    
+  <link href="../../../_static/css/theme.css" rel="stylesheet" />
+  <link href="../../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/basic.css" />
+    
+  <link rel="preload" as="script" href="../../../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="md.manual_merge" href="md.manual_merge.html" />
+    <link rel="prev" title="mednoise API Usage Guide" href="../usage.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+
+<a class="navbar-brand" href="../../../index.html">
+  <img src="../../../_static/logo.png" class="logo" alt="logo">
+</a>      
+
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../user_guide/index.html">
+  User Guide
+ </a>
+</li>
+
+<li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="../index.html">
+  API Reference
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../contributors/index.html">
+  Contributing
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/mednoise/mednoise" rel="noopener" target="_blank" title="GitHub">
+            <span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label>
+          </a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../usage.html">
+   mednoise API Usage Guide
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     md.about
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="md.manual_merge.html">
+     md.manual_merge
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="md.manual_find.html">
+     md.manual_find
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="md.manual_edit.html">
+     md.manual_edit
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="md.manual_primer.html">
+     md.manual_primer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="md.hotspot_complete.html">
+     md.hotspot_complete
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="md.hotspot_calculator.html">
+     md.hotspot_calculator
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="md.hotspot_analyzer.html">
+     md.hotspot_analyzer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="md.hotspot_isolator.html">
+     md.hotspot_isolator
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="md.branch_complete.html">
+     md.branch_complete
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="md.branch_calculator.html">
+     md.branch_calculator
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="md.branch_analyzer.html">
+     md.branch_analyzer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="md.branch_isolator.html">
+     md.branch_isolator
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="md.artificial_complete.html">
+     md.artificial_complete
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="md.artificial_calculator.html">
+     md.artificial_calculator
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="md.artificial_analyzer.html">
+     md.artificial_analyzer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="md.artificial_isolator.html">
+     md.artificial_isolator
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../explanation.html">
+   mednoise API Explanations
+  </a>
+ </li>
+</ul>
+
+  </div>
+</nav>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+
+<nav id="bd-toc-nav">
+    
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="md-about">
+<h1>md.about<a class="headerlink" href="#md-about" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="md.about">
+<span class="sig-prename descclassname"><span class="pre">md.</span></span><span class="sig-name descname"><span class="pre">about</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">header</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#md.about" title="Permalink to this definition">¶</a></dt>
+<dd><p>Provides a header and front-end interface for new users and pipeline workflows.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>header</strong><span class="classifier">boolean, default: False</span></dt><dd><p>Determines whether to display a header or a front-end interface. By default, this is set
+to <code class="docutils literal notranslate"><span class="pre">False</span></code>, meaning that it automatically generates a front-end interface if passed.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This is the most frontend aspect about <strong>mednoise</strong>. Beyond this, <strong>mednoise</strong> is 
+a series of scripts to be included in a terminal or pipeline workflow.</p>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">md</span><span class="o">.</span><span class="n">about</span><span class="p">()</span>
+<span class="go">    #############################################################################################</span>
+<span class="go">                                         8I                                                     </span>
+<span class="go">                                         8I                                                     </span>
+<span class="go">                                         8I                              gg                     </span>
+<span class="go">                                         8I                              &quot;&quot;                     </span>
+<span class="go">      ,ggg,,ggg,,ggg,    ,ggg,     ,gggg,8I   ,ggg,,ggg,     ,ggggg,     gg     ,g,      ,ggg,  </span>
+<span class="go">     ,8&quot; &quot;8P&quot; &quot;8P&quot; &quot;8,  i8&quot; &quot;8i   dP&quot;  &quot;Y8I  ,8&quot; &quot;8P&quot; &quot;8,   dP&quot;  &quot;Y8ggg  88    ,8&#39;8,    i8&quot; &quot;8i </span>
+<span class="go">     I8   8I   8I   8I  I8, ,8I  i8&#39;    ,8I  I8   8I   8I  i8&#39;    ,8I    88   ,8&#39;  Yb   I8, ,8I </span>
+<span class="go">    ,dP   8I   8I   Yb, `YbadP&#39; ,d8,   ,d8b,,dP   8I   Yb,,d8,   ,d8&#39;  _,88,_,8&#39;_   8)  `YbadP&#39; </span>
+<span class="go">    8P&#39;   8I   8I   `Y8888P&quot;Y888P&quot;Y8888P&quot;`Y88P&#39;   8I   `Y8P&quot;Y8888P&quot;    8P&quot;&quot;Y8P&#39; &quot;YY8P8P888P&quot;Y888</span>
+<span class="go">    #############################################################################################</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">md</span><span class="o">.</span><span class="n">about</span><span class="p">(</span><span class="n">header</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="go">    #############################################################################################</span>
+<span class="go">                                         8I                                                     </span>
+<span class="go">                                         8I                                                     </span>
+<span class="go">                                         8I                              gg                     </span>
+<span class="go">                                         8I                              &quot;&quot;                     </span>
+<span class="go">      ,ggg,,ggg,,ggg,    ,ggg,     ,gggg,8I   ,ggg,,ggg,     ,ggggg,     gg     ,g,      ,ggg,  </span>
+<span class="go">     ,8&quot; &quot;8P&quot; &quot;8P&quot; &quot;8,  i8&quot; &quot;8i   dP&quot;  &quot;Y8I  ,8&quot; &quot;8P&quot; &quot;8,   dP&quot;  &quot;Y8ggg  88    ,8&#39;8,    i8&quot; &quot;8i </span>
+<span class="go">     I8   8I   8I   8I  I8, ,8I  i8&#39;    ,8I  I8   8I   8I  i8&#39;    ,8I    88   ,8&#39;  Yb   I8, ,8I </span>
+<span class="go">    ,dP   8I   8I   Yb, `YbadP&#39; ,d8,   ,d8b,,dP   8I   Yb,,d8,   ,d8&#39;  _,88,_,8&#39;_   8)  `YbadP&#39; </span>
+<span class="go">    8P&#39;   8I   8I   `Y8888P&quot;Y888P&quot;Y8888P&quot;`Y88P&#39;   8I   `Y8P&quot;Y8888P&quot;    8P&quot;&quot;Y8P&#39; &quot;YY8P8P888P&quot;Y888</span>
+<span class="go">    #############################################################################################</span>
+<span class="go">    Copyright 2021 Ravi Bandaru</span>
+<span class="go">    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span>
+<span class="go">    you may not use this package except in compliance with the License.</span>
+<span class="go">    Unless required by applicable law or agreed to in writing, software</span>
+<span class="go">    distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span>
+<span class="go">    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span>
+<span class="go">    See the License for the specific language governing permissions and</span>
+<span class="go">    limitations under the License.</span>
+<span class="go">    #############################################################################################</span>
+<span class="go">    Welcome to mednoise, a python package that contains algorithms to handle and pre-process </span>
+<span class="go">    large amounts of image-based metadata to remove noise and enhance the accuracy of machine</span>
+<span class="go">    learning and deep learning models for scientific research.</span>
+<span class="go">    #############################################################################################</span>
+<span class="go">    You can bring up the help menu (h) or exit (e).</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+
+
+              </div>
+              
+              
+              <div class='prev-next-bottom'>
+                
+    <a class='left-prev' id="prev-link" href="../usage.html" title="previous page">mednoise API Usage Guide</a>
+    <a class='right-next' id="next-link" href="md.manual_merge.html" title="next page">md.manual_merge</a>
+
+              </div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <script src="../../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  <footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2021, Ravi Bandaru.<br/>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.3.<br/>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>
