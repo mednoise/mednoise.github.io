@@ -25,6 +25,8 @@ It contains:
 mednoise uses `pip`.  The installation can be run with:
 
     pip install mednoise
+
+The dependencies for mednoise are  `glob2`, `numpy`, `pillow`, and `scipy`. Please try installing those manually if you reach an error.
    
 ##### License
 
