@@ -1,0 +1,16 @@
+========================
+mednoise Introduction
+========================
+
+With the field of artificial intelligence and bioinformatics growing almost exponentially, programming languages have adapted to include more machine learning and deep learning libraries. Within Python, there are *TensorFlow* and *SciKit-Learn*, modules that offer the ability for users to develop AI models with minimal keystrokes.
+
+The field of medical imaging, however, has not adapted with similar speed. Medical imaging tools used in medical offices across the world are rarely new and are not optimized for modern AI models.
+
+Enter **mednoise**, an easily integrable tool designed entirely in Python, to process medical image metadata into usable formats for machine learning models.
+
+More specifically, **mednoise** removes unnecessary noise that has unremarkable clinical significance, yielding medical images that have the highest impact possible in bioinformatics research.
+
+The design of **mednoise** lends the package immense potential. **mednoise** can be easily integrated into any workflow, high-performance computing network, and even medical imaging tools themselves. With its open and highly tuneable structure, this package is useful to almost any usecase related to medical image research. 
+
+
+

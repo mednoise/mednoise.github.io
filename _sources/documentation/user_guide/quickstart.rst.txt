@@ -1,0 +1,45 @@
+========================
+mednoise Quickstart
+========================
+
+------------------------
+Getting Started    
+------------------------
+
+If not to be integrated into a workflow, **mednoise** is designed to be run directly from a terminal interface, specifically an interactive python shell. 
+
+You can open an interactive python shell by opening the terminal and typing the following command::
+
+    $ python
+
+------------------------
+Importing Modules   
+------------------------
+
+The **mednoise** package itself is divided by ``methods``. This means that you can choose to import one method or all of the methods (in case you want to avoid uneccesarily loading bulky methods onto your machine).
+
+A general rule: *if you don't know what method you want to use to process your medical images, load all of the methods*
+
+You can load *all* of the methods by using the following command::
+
+    >>> from mednoise import all as md
+    
+        #############################################################################################
+
+                                             8I                                                     
+                                             8I                                                     
+                                             8I                              gg                     
+                                             8I                              ""                     
+          ,ggg,,ggg,,ggg,    ,ggg,     ,gggg,8I   ,ggg,,ggg,     ,ggggg,     gg     ,g,      ,ggg,  
+         ,8" "8P" "8P" "8,  i8" "8i   dP"  "Y8I  ,8" "8P" "8,   dP"  "Y8ggg  88    ,8'8,    i8" "8i 
+         I8   8I   8I   8I  I8, ,8I  i8'    ,8I  I8   8I   8I  i8'    ,8I    88   ,8'  Yb   I8, ,8I 
+        ,dP   8I   8I   Yb, `YbadP' ,d8,   ,d8b,,dP   8I   Yb,,d8,   ,d8'  _,88,_,8'_   8)  `YbadP' 
+        8P'   8I   8I   `Y8888P"Y888P"Y8888P"`Y88P'   8I   `Y8P"Y8888P"    8P""Y8P' "YY8P8P888P"Y888
+
+        #############################################################################################
+    >>>
+    
+If successful, the ASCII representation of the **mednoise** logo will initialize on the screen as shown above.
+
+If you want to load a *specific* method, you can do so by replacing ``all`` with a specific method, such as ``manual``, ``hotspot``, ``branch``, or ``artificial``.
+

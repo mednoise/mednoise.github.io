@@ -1,0 +1,16 @@
+=================================
+mednoise Help
+=================================
+
+If you think you’ve encountered a bug in **mednoise**, please report it on the `Github issue tracker <https://github.com/mednoise/mednoise/issues>`_ . To be useful, bug reports must include the following information:
+
+- A reproducible code example that demonstrates the problem
+- The output that you are seeing (ex. the error message)
+- A clear explanation of why you think something is wrong
+- The specific versions of **mednoise** and **NumPy** that you are working with
+
+It is preferable that you provide synthetic medical images to reproduce the problem. If you can only demonstrate the issue with your actual dataset, you will need to share it, ideally as a zip file.
+
+If you’ve encountered an error, searching the specific text of the message before opening a new issue can often help you solve the problem quickly and avoid making a duplicate report.
+
+General support questions are more at home on either stackoverflow or discourse, which have a larger audience of people who will see your post and may be able to offer assistance. StackOverflow is better for specific issues, while discourse is better for more open-ended discussion. Your chance of getting a quick answer will be higher if you include runnable code, a precise statement of what you are hoping to achieve, and a clear explanation of the problems that you have encountered.

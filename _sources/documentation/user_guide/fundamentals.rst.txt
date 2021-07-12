@@ -1,0 +1,25 @@
+========================
+mednoise Fundamentals
+========================
+
+-----------------------------------
+Basics of ML Imaging Analysis
+-----------------------------------
+Many machine learning and deep learning models that analyze images do so by undergoing a simple computational process -- converting an image into a series of pixels, and analyzing those pixels in relation to some structure (ex. a specified diagnosis) to find an inferred structure through complex mathematical formulas.
+
+
+-----------------------------------
+Understanding Image Noise
+-----------------------------------
+Inevitably, images have some *noise*, areas of pixels that have little to no clinical significance. This could be letters, numbers, and identifying shapes that help align the image and identify it to the patient. To researchers, these pixels hinder the accuracy of their machine learning models as they contain color-specific pixel information that detracts from the areas of significance, either severely inhibiting the accuracy of models or artificially inflating their accuracy (if they contain diagnosis-related structure within them).
+
+-----------------------------------
+Noise Removal and ML Accuracy
+-----------------------------------
+**mednoise** uses a variety of algorithms to reduce and often eliminate noise from images. Naturally, medical images are often varied and have little to no order to them. **mednoise** is built under that assumption, placing the power to control noise reduction directly in the hands of the researcher. 
+
+.. figure:: 90_1.png
+   :scale: 50 %
+   :align: center
+
+   *mednoise** is designed to algorithmically silence noise (boxed in red). 

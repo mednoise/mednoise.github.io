@@ -1,0 +1,15 @@
+=================
+User Guide
+=================
+
+.. toctree::
+   :maxdepth: 2
+
+   what
+   fundamentals
+   installation
+   structure
+   quickstart
+   tutorials
+   workflow
+   help

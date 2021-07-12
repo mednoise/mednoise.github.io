@@ -1,0 +1,68 @@
+========================
+mednoise Tutorials
+========================
+
+-------------------------
+Inputting Filepaths
+-------------------------
+
+**mednoise** uses ``glob`` to understand input files. This means that it can take and analyze multiple images at the same time. The proper syntax for file structure is:
+
+.. code-block:: text
+    
+    For all files in a folder: "example/directory/*"
+    
+    For files in a folder with specific extension: "example/directory/*.png"
+    
+    For only one file: "example/directory/file.png"
+
+-------------------------
+Understanding Coordinates
+-------------------------
+**mednoise** uses an (x, y) cartesian coordinate system to index input files. 
+
+| In this case:
+| ``x`` refers to a pixel value along the width of the image in the interval [1, width]
+| ``y`` refers to a pixel value along the height of the image in the interval [1, height].
+
+-------------------------
+Running Methods
+-------------------------
+Normally, you can run a method by specifying a ``filepath`` and a ``find`` value. The ``filepath`` specifies the images to analyze and process. The ``find`` value specifies the color (as an RGB tuple) that is considered noiseless. In medical images, this value is normally `(0,0,0)`.
+
+The normal syntax for running a method is::
+
+    >>> md.method_complete(**args) #for complete algorithms
+    
+    >>> md.method_individualname(**args) #for individual algorithms 
+    
+-------------------------
+Example
+-------------------------
+
+Here is an example for running a complete **mednoise** method (in this case, ``branch``) **mednoise** on an ultrasound image::
+    
+    >>> from mednoise import branch as md
+
+        #############################################################################################
+                                             8I                                                     
+                                             8I                                                     
+                                             8I                              gg                     
+                                             8I                              ""                     
+          ,ggg,,ggg,,ggg,    ,ggg,     ,gggg,8I   ,ggg,,ggg,     ,ggggg,     gg     ,g,      ,ggg,  
+         ,8" "8P" "8P" "8,  i8" "8i   dP"  "Y8I  ,8" "8P" "8,   dP"  "Y8ggg  88    ,8'8,    i8" "8i 
+         I8   8I   8I   8I  I8, ,8I  i8'    ,8I  I8   8I   8I  i8'    ,8I    88   ,8'  Yb   I8, ,8I 
+        ,dP   8I   8I   Yb, `YbadP' ,d8,   ,d8b,,dP   8I   Yb,,d8,   ,d8'  _,88,_,8'_   8)  `YbadP' 
+        8P'   8I   8I   `Y8888P"Y888P"Y8888P"`Y88P'   8I   `Y8P"Y8888P"    8P""Y8P' "YY8P8P888P"Y888
+        #############################################################################################
+        
+    >>> md.branch_complete("/example/directory/file.PNG",(0,0,0),x,y,50) #see API documentation for a full understanding of the arguments here
+    md.branch_complete - Image 1 Importing:0:00:00
+    md.branch_complete - Image 1 Converting:0:00:01
+    md.branch_complete - Image 1 Translating:0:00:00
+    md.branch_complete - Image 1 Branching:0:00:05
+    md.branch_complete - Image 1 Branch Analyzing:0:00:07
+    md.branch_complete - Image 1 Branch Isolating:0:00:08
+    md.branch_complete - Image 1 Array Priming:0:00:00
+    md.branch_complete - Image 1 Translating:0:00:00
+    md.branch_complete - Image 1 Saving:0:00:00

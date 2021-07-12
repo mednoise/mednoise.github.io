@@ -1,0 +1,29 @@
+==========================
+mednoise Installation
+==========================
+
+-----------------------
+Prerequisites
+-----------------------
+The only prerequisite for installing **mednoise** is Python. If you don’t have Python yet and want the simplest way to get started, we recommend you use the Anaconda Distribution - it includes Python, NumPy, and many other commonly used packages for scientific computing and data science.
+
+----------------------
+Installation
+----------------------
+**mednoise** can be installed with with ``pip``, with a package manager on macOS and Linux, or from source.
+
+Using ``pip``::
+
+    pip install numpy
+
+Also when using ``pip``, it’s good practice to use a virtual environment, like a ``conda`` environment.
+
+------------------
+Errors
+------------------
+
+If any errors arise during the installation, it's likely because the dependencies did not load properly.
+
+Make sure the following dependencies are installed on your machine: ``glob2``, ``numpy``, ``tkinter``, ``PIL``, ``ntpath``, ``collections``, and ``scipy``.
+
+If that doesn't work, make sure to fill out a detailed issue in the GitHub repository.

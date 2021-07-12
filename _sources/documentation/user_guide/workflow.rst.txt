@@ -1,0 +1,117 @@
+==============================
+mednoise Workflow Integration
+==============================
+
+As mentioned, **mednoise** is principally designed to be integrated into a workflow (for full tuneability). Below are a few example scripts for popular integration softwares **mednoise** is compatible with. Note that this list is not exhaustive.
+
+---------------------------------
+Integration with Airflow
+---------------------------------
+**mednoise** is capable of integrating into DAG-based pipeline systems wuch as Airflow. Below is a sample pipeline workflow in Airflow::
+
+    from airflow import DAG
+    from airflow.operators.python import PythonOperator, PythonVirtualenvOperator
+    from airflow.utils.dates import days_ago
+    from mednoise import branch as md
+    import glob2 as glob 
+
+    with DAG( #builds the framework of the dag as presented in the airflow workspace
+        dag_id='md.branch_complete',
+        start_date=days_ago({integer value}),
+        tags=['mednoise'],
+    ) as dag:
+
+        def noiseReduction(index):
+            """
+            Initialize a list of input files and analyze them using md.branch_complete.
+            """
+            files = glob.glob("/example/directory/images/*")
+            md.branch_complete(files[index], (0,0,0), 450, 350, 50) #branch_complete algorithm with relevant arguments
+            
+        for i in range({integer value}): #the bound index for the list of glob files
+            mednoise = PythonOperator(
+                task_id='mednoise_branchcomplete_pipeline_step_'+str(i),
+                python_callable=noiseReduction, #calls the mednoise branch_complete algorithm
+                op_kwargs={'index': i},
+            )
+
+            mednoise
+
+        #here you can run the next steps of your pipeline
+
+You can run the above pipeline by running the following command simultaneously into your terminal, assuming that the DAGs have been properly introduced and activated in your workspace::
+
+    $ airflow webserver
+    $ airflow scheduler
+
+---------------------------------
+Integration with Luigi
+---------------------------------
+**mednoise** is capable of integrating into Luigi workflows. Below is a sample pipeline workflow in Luigi::
+
+    import luigi
+    from mednoise import branch as md
+    import glob2 as glob
+
+    class GlobalParams(luigi.Config):
+        bound_ID = luigi.IntParameter() #the bound index for the list of glob files
+
+    class noiseRemoval(luigi.Task):
+        """
+        Initialize a list of input files and analyze them using md.branch_complete.
+        """
+
+        FileID = luigi.IntParameter()
+
+        def output(self):
+            return luigi.LocalTarget('/example/directory/finalimages/{}.PNG') #expected output files from noiseRemoval
+
+        def run(self):
+            files = glob.glob("/example/directory/images/*")
+            md.branch_complete(files[self.FileID], (0,0,0), 450, 350, 50) #branch_complete algorithm with relevant arguments 
+
+    class someOthertask(luigi.Task):
+        def requires(self): #required files for this step that creates a branching dependency on mednoise
+            requiredInputs = []
+            for i in range(GlobalParams().bound_ID):
+                requiredInputs.append(noiseRemoval(FileID=i))
+            return requiredInputs
+        def output(self):
+            return luigi.LocalTarget("/example/directory/file.extension")
+        def run(self):
+            #here you can run the next steps of your pipeline
+
+You can run the above pipeline by typing the following command into your terminal, replacing the ``{}`` to fit your usage::
+    
+    $ python -m luigi --module {NAME OF LUIGI SCRIPT W/O .PY} inputFiles --bound-ID {INT} --workers {INT}
+    
+---------------------------------
+Integration with Snakemake
+---------------------------------
+**mednoise** is capable of integrating into shell-based workflows like Snakemake. Below is a sample pipeline workflow in Snakemake::
+
+    localrules: all, mednoise
+
+    SAMPLE_NAMES = ['', '', '', '', '', ... , '', '', '', '', '']
+
+
+    rule all: #introduces expected output files to allow snakemake to inference parallelize based on sample names
+        input:
+            expand("/example/directory/finalimages/{sid}_isolated.PNG", sid=SAMPLE_NAMES),
+
+    rule mednoise: #branch_complete algorithm embedded in a rule
+        input:
+            rawmd="/example/directory/images/{sid}_isolated.png",
+        output:
+            filteredmd="/example/directory/finalimages/{sid}_isolated.PNG",
+        shell: #expected shell commands to carry out in terminal
+            """
+            python 
+            from mednoise import branch as md
+            md.branch_complete({input.rawmd}, (0,0,0), 450, 350, 50)
+            exit()
+            """
+You can run the above pipeline by typing the following command into your terminal, replacing the ``{}`` to fit your usage::
+
+    $ snakemake --cores {CORES} -s {LOCATION OF SNAKEMAKE SCRIPT} {OTHER OPTIONS}
+
