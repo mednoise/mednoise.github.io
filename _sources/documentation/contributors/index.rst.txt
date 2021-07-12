@@ -1,0 +1,11 @@
+==========================
+Contributing
+==========================
+
+All contributions, bug reports, bug fixes, documentation improvements, enhancements, and ideas are welcome.
+
+If you are brand new to **mednoise** or open-source development, we recommend going through the `Github issue tracker <https://github.com/mednoise/mednoise/issues>`_  to find issues that interest you. There are a number of issues listed under Docs and good first issue where you could start out. 
+
+When you start working on an issue, it’s a good idea to assign the issue to yourself, so nobody else duplicates the work on it. GitHub restricts assigning issues to maintainers of the project only. In most projects, and until recently in **mednoise**, contributors added a comment letting others know they are working on an issue. While this is ok, you need to check each issue individually, and it’s not possible to find the unassigned ones.
+
+If for whatever reason you are not able to continue working with the issue, please try to unassign it, so other people know it’s available again. You can check the list of assigned issues, since people may not be working in them anymore. If you want to work on one that is assigned, feel free to kindly ask the current assignee if you can take it (please allow at least a week of inactivity before considering work in the issue discontinued).
