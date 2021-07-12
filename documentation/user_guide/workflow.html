@@ -1,0 +1,376 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mednoise Workflow Integration &#8212; mednoise 0.2.3 documentation</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet" />
+  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="mednoise Help" href="help.html" />
+    <link rel="prev" title="mednoise Tutorials" href="tutorials.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+
+<a class="navbar-brand" href="../../index.html">
+  <img src="../../_static/logo.png" class="logo" alt="logo">
+</a>      
+
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="index.html">
+  User Guide
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../api_reference/index.html">
+  API Reference
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../contributors/index.html">
+  Contributing
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/mednoise/mednoise" rel="noopener" target="_blank" title="GitHub">
+            <span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label>
+          </a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="what.html">
+   mednoise Introduction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="fundamentals.html">
+   mednoise Fundamentals
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="installation.html">
+   mednoise Installation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="structure.html">
+   mednoise Structure
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="quickstart.html">
+   mednoise Quickstart
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tutorials.html">
+   mednoise Tutorials
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   mednoise Workflow Integration
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="help.html">
+   mednoise Help
+  </a>
+ </li>
+</ul>
+
+  </div>
+</nav>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#integration-with-airflow">
+   Integration with Airflow
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#integration-with-luigi">
+   Integration with Luigi
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#integration-with-snakemake">
+   Integration with Snakemake
+  </a>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="mednoise-workflow-integration">
+<h1>mednoise Workflow Integration<a class="headerlink" href="#mednoise-workflow-integration" title="Permalink to this headline">¶</a></h1>
+<p>As mentioned, <strong>mednoise</strong> is principally designed to be integrated into a workflow (for full tuneability). Below are a few example scripts for popular integration softwares <strong>mednoise</strong> is compatible with. Note that this list is not exhaustive.</p>
+<div class="section" id="integration-with-airflow">
+<h2>Integration with Airflow<a class="headerlink" href="#integration-with-airflow" title="Permalink to this headline">¶</a></h2>
+<p><strong>mednoise</strong> is capable of integrating into DAG-based pipeline systems wuch as Airflow. Below is a sample pipeline workflow in Airflow:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">airflow</span> <span class="kn">import</span> <span class="n">DAG</span>
+<span class="kn">from</span> <span class="nn">airflow.operators.python</span> <span class="kn">import</span> <span class="n">PythonOperator</span><span class="p">,</span> <span class="n">PythonVirtualenvOperator</span>
+<span class="kn">from</span> <span class="nn">airflow.utils.dates</span> <span class="kn">import</span> <span class="n">days_ago</span>
+<span class="kn">from</span> <span class="nn">mednoise</span> <span class="kn">import</span> <span class="n">branch</span> <span class="k">as</span> <span class="n">md</span>
+<span class="kn">import</span> <span class="nn">glob2</span> <span class="k">as</span> <span class="nn">glob</span>
+
+<span class="k">with</span> <span class="n">DAG</span><span class="p">(</span> <span class="c1">#builds the framework of the dag as presented in the airflow workspace</span>
+    <span class="n">dag_id</span><span class="o">=</span><span class="s1">&#39;md.branch_complete&#39;</span><span class="p">,</span>
+    <span class="n">start_date</span><span class="o">=</span><span class="n">days_ago</span><span class="p">({</span><span class="n">integer</span> <span class="n">value</span><span class="p">}),</span>
+    <span class="n">tags</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;mednoise&#39;</span><span class="p">],</span>
+<span class="p">)</span> <span class="k">as</span> <span class="n">dag</span><span class="p">:</span>
+
+    <span class="k">def</span> <span class="nf">noiseReduction</span><span class="p">(</span><span class="n">index</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Initialize a list of input files and analyze them using md.branch_complete.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">files</span> <span class="o">=</span> <span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s2">&quot;/example/directory/images/*&quot;</span><span class="p">)</span>
+        <span class="n">md</span><span class="o">.</span><span class="n">branch_complete</span><span class="p">(</span><span class="n">files</span><span class="p">[</span><span class="n">index</span><span class="p">],</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span> <span class="mi">450</span><span class="p">,</span> <span class="mi">350</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span> <span class="c1">#branch_complete algorithm with relevant arguments</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">({</span><span class="n">integer</span> <span class="n">value</span><span class="p">}):</span> <span class="c1">#the bound index for the list of glob files</span>
+        <span class="n">mednoise</span> <span class="o">=</span> <span class="n">PythonOperator</span><span class="p">(</span>
+            <span class="n">task_id</span><span class="o">=</span><span class="s1">&#39;mednoise_branchcomplete_pipeline_step_&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">),</span>
+            <span class="n">python_callable</span><span class="o">=</span><span class="n">noiseReduction</span><span class="p">,</span> <span class="c1">#calls the mednoise branch_complete algorithm</span>
+            <span class="n">op_kwargs</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;index&#39;</span><span class="p">:</span> <span class="n">i</span><span class="p">},</span>
+        <span class="p">)</span>
+
+        <span class="n">mednoise</span>
+
+    <span class="c1">#here you can run the next steps of your pipeline</span>
+</pre></div>
+</div>
+<p>You can run the above pipeline by running the following command simultaneously into your terminal, assuming that the DAGs have been properly introduced and activated in your workspace:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ airflow webserver
+$ airflow scheduler
+</pre></div>
+</div>
+</div>
+<div class="section" id="integration-with-luigi">
+<h2>Integration with Luigi<a class="headerlink" href="#integration-with-luigi" title="Permalink to this headline">¶</a></h2>
+<p><strong>mednoise</strong> is capable of integrating into Luigi workflows. Below is a sample pipeline workflow in Luigi:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">luigi</span>
+<span class="kn">from</span> <span class="nn">mednoise</span> <span class="kn">import</span> <span class="n">branch</span> <span class="k">as</span> <span class="n">md</span>
+<span class="kn">import</span> <span class="nn">glob2</span> <span class="k">as</span> <span class="nn">glob</span>
+
+<span class="k">class</span> <span class="nc">GlobalParams</span><span class="p">(</span><span class="n">luigi</span><span class="o">.</span><span class="n">Config</span><span class="p">):</span>
+    <span class="n">bound_ID</span> <span class="o">=</span> <span class="n">luigi</span><span class="o">.</span><span class="n">IntParameter</span><span class="p">()</span> <span class="c1">#the bound index for the list of glob files</span>
+
+<span class="k">class</span> <span class="nc">noiseRemoval</span><span class="p">(</span><span class="n">luigi</span><span class="o">.</span><span class="n">Task</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Initialize a list of input files and analyze them using md.branch_complete.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">FileID</span> <span class="o">=</span> <span class="n">luigi</span><span class="o">.</span><span class="n">IntParameter</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">output</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">luigi</span><span class="o">.</span><span class="n">LocalTarget</span><span class="p">(</span><span class="s1">&#39;/example/directory/finalimages/</span><span class="si">{}</span><span class="s1">.PNG&#39;</span><span class="p">)</span> <span class="c1">#expected output files from noiseRemoval</span>
+
+    <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">files</span> <span class="o">=</span> <span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s2">&quot;/example/directory/images/*&quot;</span><span class="p">)</span>
+        <span class="n">md</span><span class="o">.</span><span class="n">branch_complete</span><span class="p">(</span><span class="n">files</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">FileID</span><span class="p">],</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span> <span class="mi">450</span><span class="p">,</span> <span class="mi">350</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span> <span class="c1">#branch_complete algorithm with relevant arguments</span>
+
+<span class="k">class</span> <span class="nc">someOthertask</span><span class="p">(</span><span class="n">luigi</span><span class="o">.</span><span class="n">Task</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">requires</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1">#required files for this step that creates a branching dependency on mednoise</span>
+        <span class="n">requiredInputs</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">GlobalParams</span><span class="p">()</span><span class="o">.</span><span class="n">bound_ID</span><span class="p">):</span>
+            <span class="n">requiredInputs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">noiseRemoval</span><span class="p">(</span><span class="n">FileID</span><span class="o">=</span><span class="n">i</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">requiredInputs</span>
+    <span class="k">def</span> <span class="nf">output</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">luigi</span><span class="o">.</span><span class="n">LocalTarget</span><span class="p">(</span><span class="s2">&quot;/example/directory/file.extension&quot;</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1">#here you can run the next steps of your pipeline</span>
+</pre></div>
+</div>
+<p>You can run the above pipeline by typing the following command into your terminal, replacing the <code class="docutils literal notranslate"><span class="pre">{}</span></code> to fit your usage:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ python -m luigi --module {NAME OF LUIGI SCRIPT W/O .PY} inputFiles --bound-ID {INT} --workers {INT}
+</pre></div>
+</div>
+</div>
+<div class="section" id="integration-with-snakemake">
+<h2>Integration with Snakemake<a class="headerlink" href="#integration-with-snakemake" title="Permalink to this headline">¶</a></h2>
+<p><strong>mednoise</strong> is capable of integrating into shell-based workflows like Snakemake. Below is a sample pipeline workflow in Snakemake:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">localrules</span><span class="p">:</span> <span class="nb">all</span><span class="p">,</span> <span class="n">mednoise</span>
+
+<span class="n">SAMPLE_NAMES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="o">...</span> <span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">]</span>
+
+
+<span class="n">rule</span> <span class="nb">all</span><span class="p">:</span> <span class="c1">#introduces expected output files to allow snakemake to inference parallelize based on sample names</span>
+    <span class="nb">input</span><span class="p">:</span>
+        <span class="n">expand</span><span class="p">(</span><span class="s2">&quot;/example/directory/finalimages/</span><span class="si">{sid}</span><span class="s2">_isolated.PNG&quot;</span><span class="p">,</span> <span class="n">sid</span><span class="o">=</span><span class="n">SAMPLE_NAMES</span><span class="p">),</span>
+
+<span class="n">rule</span> <span class="n">mednoise</span><span class="p">:</span> <span class="c1">#branch_complete algorithm embedded in a rule</span>
+    <span class="nb">input</span><span class="p">:</span>
+        <span class="n">rawmd</span><span class="o">=</span><span class="s2">&quot;/example/directory/images/</span><span class="si">{sid}</span><span class="s2">_isolated.png&quot;</span><span class="p">,</span>
+    <span class="n">output</span><span class="p">:</span>
+        <span class="n">filteredmd</span><span class="o">=</span><span class="s2">&quot;/example/directory/finalimages/</span><span class="si">{sid}</span><span class="s2">_isolated.PNG&quot;</span><span class="p">,</span>
+    <span class="n">shell</span><span class="p">:</span> <span class="c1">#expected shell commands to carry out in terminal</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        python</span>
+<span class="sd">        from mednoise import branch as md</span>
+<span class="sd">        md.branch_complete({input.rawmd}, (0,0,0), 450, 350, 50)</span>
+<span class="sd">        exit()</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+</pre></div>
+</div>
+<p>You can run the above pipeline by typing the following command into your terminal, replacing the <code class="docutils literal notranslate"><span class="pre">{}</span></code> to fit your usage:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ snakemake --cores {CORES} -s {LOCATION OF SNAKEMAKE SCRIPT} {OTHER OPTIONS}
+</pre></div>
+</div>
+</div>
+</div>
+
+
+              </div>
+              
+              
+              <div class='prev-next-bottom'>
+                
+    <a class='left-prev' id="prev-link" href="tutorials.html" title="previous page">mednoise Tutorials</a>
+    <a class='right-next' id="next-link" href="help.html" title="next page">mednoise Help</a>
+
+              </div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  <footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2021, Ravi Bandaru.<br/>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.3.<br/>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>

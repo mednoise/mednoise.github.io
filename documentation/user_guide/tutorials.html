@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mednoise Tutorials &#8212; mednoise 0.2.3 documentation</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet" />
+  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="mednoise Workflow Integration" href="workflow.html" />
+    <link rel="prev" title="mednoise Quickstart" href="quickstart.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+
+<a class="navbar-brand" href="../../index.html">
+  <img src="../../_static/logo.png" class="logo" alt="logo">
+</a>      
+
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="index.html">
+  User Guide
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../api_reference/index.html">
+  API Reference
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../contributors/index.html">
+  Contributing
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/mednoise/mednoise" rel="noopener" target="_blank" title="GitHub">
+            <span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label>
+          </a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="what.html">
+   mednoise Introduction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="fundamentals.html">
+   mednoise Fundamentals
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="installation.html">
+   mednoise Installation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="structure.html">
+   mednoise Structure
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="quickstart.html">
+   mednoise Quickstart
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   mednoise Tutorials
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="workflow.html">
+   mednoise Workflow Integration
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="help.html">
+   mednoise Help
+  </a>
+ </li>
+</ul>
+
+  </div>
+</nav>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#inputting-filepaths">
+   Inputting Filepaths
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#understanding-coordinates">
+   Understanding Coordinates
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#running-methods">
+   Running Methods
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example">
+   Example
+  </a>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="mednoise-tutorials">
+<h1>mednoise Tutorials<a class="headerlink" href="#mednoise-tutorials" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="inputting-filepaths">
+<h2>Inputting Filepaths<a class="headerlink" href="#inputting-filepaths" title="Permalink to this headline">¶</a></h2>
+<p><strong>mednoise</strong> uses <code class="docutils literal notranslate"><span class="pre">glob</span></code> to understand input files. This means that it can take and analyze multiple images at the same time. The proper syntax for file structure is:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>For all files in a folder: &quot;example/directory/*&quot;
+
+For files in a folder with specific extension: &quot;example/directory/*.png&quot;
+
+For only one file: &quot;example/directory/file.png&quot;
+</pre></div>
+</div>
+</div>
+<div class="section" id="understanding-coordinates">
+<h2>Understanding Coordinates<a class="headerlink" href="#understanding-coordinates" title="Permalink to this headline">¶</a></h2>
+<p><strong>mednoise</strong> uses an (x, y) cartesian coordinate system to index input files.</p>
+<div class="line-block">
+<div class="line">In this case:</div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">x</span></code> refers to a pixel value along the width of the image in the interval [1, width]</div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">y</span></code> refers to a pixel value along the height of the image in the interval [1, height].</div>
+</div>
+</div>
+<div class="section" id="running-methods">
+<h2>Running Methods<a class="headerlink" href="#running-methods" title="Permalink to this headline">¶</a></h2>
+<p>Normally, you can run a method by specifying a <code class="docutils literal notranslate"><span class="pre">filepath</span></code> and a <code class="docutils literal notranslate"><span class="pre">find</span></code> value. The <code class="docutils literal notranslate"><span class="pre">filepath</span></code> specifies the images to analyze and process. The <code class="docutils literal notranslate"><span class="pre">find</span></code> value specifies the color (as an RGB tuple) that is considered noiseless. In medical images, this value is normally <cite>(0,0,0)</cite>.</p>
+<p>The normal syntax for running a method is:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">md</span><span class="o">.</span><span class="n">method_complete</span><span class="p">(</span><span class="o">**</span><span class="n">args</span><span class="p">)</span> <span class="c1">#for complete algorithms</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">md</span><span class="o">.</span><span class="n">method_individualname</span><span class="p">(</span><span class="o">**</span><span class="n">args</span><span class="p">)</span> <span class="c1">#for individual algorithms</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<p>Here is an example for running a complete <strong>mednoise</strong> method (in this case, <code class="docutils literal notranslate"><span class="pre">branch</span></code>) <strong>mednoise</strong> on an ultrasound image:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">mednoise</span> <span class="kn">import</span> <span class="n">branch</span> <span class="k">as</span> <span class="n">md</span>
+
+<span class="go">    #############################################################################################</span>
+<span class="go">                                         8I</span>
+<span class="go">                                         8I</span>
+<span class="go">                                         8I                              gg</span>
+<span class="go">                                         8I                              &quot;&quot;</span>
+<span class="go">      ,ggg,,ggg,,ggg,    ,ggg,     ,gggg,8I   ,ggg,,ggg,     ,ggggg,     gg     ,g,      ,ggg,</span>
+<span class="go">     ,8&quot; &quot;8P&quot; &quot;8P&quot; &quot;8,  i8&quot; &quot;8i   dP&quot;  &quot;Y8I  ,8&quot; &quot;8P&quot; &quot;8,   dP&quot;  &quot;Y8ggg  88    ,8&#39;8,    i8&quot; &quot;8i</span>
+<span class="go">     I8   8I   8I   8I  I8, ,8I  i8&#39;    ,8I  I8   8I   8I  i8&#39;    ,8I    88   ,8&#39;  Yb   I8, ,8I</span>
+<span class="go">    ,dP   8I   8I   Yb, `YbadP&#39; ,d8,   ,d8b,,dP   8I   Yb,,d8,   ,d8&#39;  _,88,_,8&#39;_   8)  `YbadP&#39;</span>
+<span class="go">    8P&#39;   8I   8I   `Y8888P&quot;Y888P&quot;Y8888P&quot;`Y88P&#39;   8I   `Y8P&quot;Y8888P&quot;    8P&quot;&quot;Y8P&#39; &quot;YY8P8P888P&quot;Y888</span>
+<span class="go">    #############################################################################################</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">md</span><span class="o">.</span><span class="n">branch_complete</span><span class="p">(</span><span class="s2">&quot;/example/directory/file.PNG&quot;</span><span class="p">,(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="mi">50</span><span class="p">)</span> <span class="c1">#see API documentation for a full understanding of the arguments here</span>
+<span class="go">md.branch_complete - Image 1 Importing:0:00:00</span>
+<span class="go">md.branch_complete - Image 1 Converting:0:00:01</span>
+<span class="go">md.branch_complete - Image 1 Translating:0:00:00</span>
+<span class="go">md.branch_complete - Image 1 Branching:0:00:05</span>
+<span class="go">md.branch_complete - Image 1 Branch Analyzing:0:00:07</span>
+<span class="go">md.branch_complete - Image 1 Branch Isolating:0:00:08</span>
+<span class="go">md.branch_complete - Image 1 Array Priming:0:00:00</span>
+<span class="go">md.branch_complete - Image 1 Translating:0:00:00</span>
+<span class="go">md.branch_complete - Image 1 Saving:0:00:00</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+              </div>
+              
+              
+              <div class='prev-next-bottom'>
+                
+    <a class='left-prev' id="prev-link" href="quickstart.html" title="previous page">mednoise Quickstart</a>
+    <a class='right-next' id="next-link" href="workflow.html" title="next page">mednoise Workflow Integration</a>
+
+              </div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  <footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2021, Ravi Bandaru.<br/>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.3.<br/>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>
