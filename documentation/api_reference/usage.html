@@ -1,0 +1,441 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mednoise API Usage Guide &#8212; mednoise 0.2.3 documentation</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet" />
+  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="md.about" href="api/md.about.html" />
+    <link rel="prev" title="API Reference" href="index.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+
+<a class="navbar-brand" href="../../index.html">
+  <img src="../../_static/logo.png" class="logo" alt="logo">
+</a>      
+
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../user_guide/index.html">
+  User Guide
+ </a>
+</li>
+
+<li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="index.html">
+  API Reference
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../contributors/index.html">
+  Contributing
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/mednoise/mednoise" rel="noopener" target="_blank" title="GitHub">
+            <span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label>
+          </a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="current reference internal" href="#">
+   mednoise API Usage Guide
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="api/md.about.html">
+     md.about
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="api/md.manual_merge.html">
+     md.manual_merge
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="api/md.manual_find.html">
+     md.manual_find
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="api/md.manual_edit.html">
+     md.manual_edit
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="api/md.manual_primer.html">
+     md.manual_primer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="api/md.hotspot_complete.html">
+     md.hotspot_complete
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="api/md.hotspot_calculator.html">
+     md.hotspot_calculator
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="api/md.hotspot_analyzer.html">
+     md.hotspot_analyzer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="api/md.hotspot_isolator.html">
+     md.hotspot_isolator
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="api/md.branch_complete.html">
+     md.branch_complete
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="api/md.branch_calculator.html">
+     md.branch_calculator
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="api/md.branch_analyzer.html">
+     md.branch_analyzer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="api/md.branch_isolator.html">
+     md.branch_isolator
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="api/md.artificial_complete.html">
+     md.artificial_complete
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="api/md.artificial_calculator.html">
+     md.artificial_calculator
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="api/md.artificial_analyzer.html">
+     md.artificial_analyzer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="api/md.artificial_isolator.html">
+     md.artificial_isolator
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="explanation.html">
+   mednoise API Explanations
+  </a>
+ </li>
+</ul>
+
+  </div>
+</nav>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#basic-functions">
+   Basic Functions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#manual-algorithms">
+   Manual Algorithms
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hotspot-algorithms">
+   Hotspot Algorithms
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#branch-algorithms">
+   Branch Algorithms
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#artificial-algorithms">
+   Artificial Algorithms
+  </a>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="mednoise-api-usage-guide">
+<span id="api-usage"></span><h1>mednoise API Usage Guide<a class="headerlink" href="#mednoise-api-usage-guide" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="basic-functions">
+<h2>Basic Functions<a class="headerlink" href="#basic-functions" title="Permalink to this headline">¶</a></h2>
+<table class="longtable table autosummary">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="api/md.about.html#md.about" title="md.about"><code class="xref py py-obj docutils literal notranslate"><span class="pre">about</span></code></a>([header])</p></td>
+<td><p>Provides a header and front-end interface for new users and pipeline workflows.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="manual-algorithms">
+<h2>Manual Algorithms<a class="headerlink" href="#manual-algorithms" title="Permalink to this headline">¶</a></h2>
+<table class="longtable table autosummary">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="api/md.manual_merge.html#md.manual_merge" title="md.manual_merge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">manual_merge</span></code></a>(filepath[, find, replace])</p></td>
+<td><p>Combines multiple input images of the same size to yield one binary image that allows for  common feature detection.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="api/md.manual_find.html#md.manual_find" title="md.manual_find"><code class="xref py py-obj docutils literal notranslate"><span class="pre">manual_find</span></code></a>(filepath)</p></td>
+<td><p>Offers an interface through tkinter to identify pixel coordinates and create tuple-lists that can be passed through a filter.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="api/md.manual_edit.html#md.manual_edit" title="md.manual_edit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">manual_edit</span></code></a>(filepath, xy[, find])</p></td>
+<td><p>Offers a manual method through which sections of input images can be silenced.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="api/md.manual_primer.html#md.manual_primer" title="md.manual_primer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">manual_primer</span></code></a>(filepath[, find])</p></td>
+<td><p>Creates one binary image from an imput image that allows for common feature detection.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="hotspot-algorithms">
+<h2>Hotspot Algorithms<a class="headerlink" href="#hotspot-algorithms" title="Permalink to this headline">¶</a></h2>
+<table class="longtable table autosummary">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="api/md.hotspot_complete.html#md.hotspot_complete" title="md.hotspot_complete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">hotspot_complete</span></code></a>(filepath, x, y[, find])</p></td>
+<td><p>Processes inputted images using a hotspot algorithm,  essentially acting as an intuitive paintbrush across the image.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="api/md.hotspot_calculator.html#md.hotspot_calculator" title="md.hotspot_calculator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">hotspot_calculator</span></code></a>(filepath, x, y[, find])</p></td>
+<td><p>Calculates partition matrixes from input images,  essentially divides the input image into all possiblehotspot combinations.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="api/md.hotspot_analyzer.html#md.hotspot_analyzer" title="md.hotspot_analyzer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">hotspot_analyzer</span></code></a>([calc, filepath, x, y, find])</p></td>
+<td><p>Analyzes partition matrixes from input images,  essentially determining the clinical significance of each spot, preparing the image for isolation.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="api/md.hotspot_isolator.html#md.hotspot_isolator" title="md.hotspot_isolator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">hotspot_isolator</span></code></a>([calc, filepath, x, y, find])</p></td>
+<td><p>Isolates and silences relevant partition matrixes from input images,  essentially removing noise with unremarkable clinical significance from each image.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="branch-algorithms">
+<h2>Branch Algorithms<a class="headerlink" href="#branch-algorithms" title="Permalink to this headline">¶</a></h2>
+<table class="longtable table autosummary">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="api/md.branch_complete.html#md.branch_complete" title="md.branch_complete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">branch_complete</span></code></a>(filepath, x, y[, find, …])</p></td>
+<td><p>Processes inputted images using a branching algorithm,  essentially acting as an intuitive selector of a figure in the image.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="api/md.branch_calculator.html#md.branch_calculator" title="md.branch_calculator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">branch_calculator</span></code></a>(filepath, x, y[, find, …])</p></td>
+<td><p>Calculates branches for inputted images using a branching algorithm,  essentially acting as an intuitive selector of a figure in the image.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="api/md.branch_analyzer.html#md.branch_analyzer" title="md.branch_analyzer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">branch_analyzer</span></code></a>(calc)</p></td>
+<td><p>Analyzes branches for inputted images,  essentially determining the clinical significance of each spot, preparing the image for isolation.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="api/md.branch_isolator.html#md.branch_isolator" title="md.branch_isolator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">branch_isolator</span></code></a>(filepath, calc[, find])</p></td>
+<td><p>Analyzes branches for inputted images,  essentially determining the clinical significance of each spot, preparing the image for isolation.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="artificial-algorithms">
+<h2>Artificial Algorithms<a class="headerlink" href="#artificial-algorithms" title="Permalink to this headline">¶</a></h2>
+<table class="longtable table autosummary">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="api/md.artificial_complete.html#md.artificial_complete" title="md.artificial_complete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">artificial_complete</span></code></a>()</p></td>
+<td><p>Processes inputted images using a jaccard-similarity algorithm,  similar to the ones used in machine learning and deep learning.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="api/md.artificial_calculator.html#md.artificial_calculator" title="md.artificial_calculator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">artificial_calculator</span></code></a>()</p></td>
+<td><p>Calculates scores for inputted images using a jaccard-similarity algorithm,  similar to the ones used in machine learning and deep learning.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="api/md.artificial_analyzer.html#md.artificial_analyzer" title="md.artificial_analyzer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">artificial_analyzer</span></code></a>()</p></td>
+<td><p>Analyzes scores for inputted images to determine noise significance based on jaccard-similiarity.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="api/md.artificial_isolator.html#md.artificial_isolator" title="md.artificial_isolator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">artificial_isolator</span></code></a>()</p></td>
+<td><p>Selectively reduces noise based on analyzed scores for inputted images.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+              </div>
+              
+              
+              <div class='prev-next-bottom'>
+                
+    <a class='left-prev' id="prev-link" href="index.html" title="previous page">API Reference</a>
+    <a class='right-next' id="next-link" href="api/md.about.html" title="next page">md.about</a>
+
+              </div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  <footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2021, Ravi Bandaru.<br/>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.3.<br/>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>
