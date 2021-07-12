@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mednoise - medical image processing &#8212; mednoise 0.2.3 documentation</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="User Guide" href="documentation/user_guide/index.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+
+<a class="navbar-brand" href="#">
+  <img src="_static/logo.png" class="logo" alt="logo">
+</a>      
+
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="documentation/user_guide/index.html">
+  User Guide
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="documentation/api_reference/index.html">
+  API Reference
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="documentation/contributors/index.html">
+  Contributing
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/mednoise/mednoise" rel="noopener" target="_blank" title="GitHub">
+            <span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label>
+          </a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    
+  </div>
+</nav>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#about">
+   About
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#focus">
+   Focus
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#documentation">
+   Documentation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#citations">
+   Citations
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#contact">
+   Contact
+  </a>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="mednoise-medical-image-processing">
+<h1>mednoise - medical image processing<a class="headerlink" href="#mednoise-medical-image-processing" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="about">
+<h2>About<a class="headerlink" href="#about" title="Permalink to this headline">¶</a></h2>
+<p><strong>mednoise</strong> is an open-source python package that contains algorithms to pre-process image metadata to remove noise and enhance the accuracy of machine learning and deep learning models for scientific research.</p>
+<ul class="simple">
+<li><p><strong>Website:</strong> <a class="reference external" href="https://mednoise.github.io">https://mednoise.github.io</a></p></li>
+<li><p><strong>PyPI:</strong> <a class="reference external" href="https://pypi.org/project/mednoise/">https://pypi.org/project/mednoise/</a></p></li>
+<li><p><strong>Documentation:</strong> <a class="reference external" href="https://mednoise.github.io/documentation">https://mednoise.github.io/documentation</a></p></li>
+<li><p><strong>Source code:</strong> <a class="reference external" href="https://github.com/mednoise/mednoise">https://github.com/mednoise/mednoise</a></p></li>
+<li><p><strong>Bug reports:</strong> <a class="reference external" href="https://github.com/mednoise/mednoise/issues">https://github.com/mednoise/mednoise/issues</a></p></li>
+</ul>
+</div>
+<div class="section" id="focus">
+<h2>Focus<a class="headerlink" href="#focus" title="Permalink to this headline">¶</a></h2>
+<p>As an open-source project, <strong>mednoise</strong> strives to improve the quality and power of computational research across the world. To this end, we encourage researchers to contribute their work and algorithms to mednoise so that we can improve, evolve, and change the future of research and medical imaging together.</p>
+<p><strong>mednoise</strong> is designed as a tool for pipelines and workflow management systems that rely on medical image metadata (or at least the analysis of that metadata). It aims to create a future of medical imaging that is more accessible and utilizable in the constantly evolving field of medical technology.</p>
+</div>
+<div class="section" id="documentation">
+<h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="documentation/user_guide/index.html">User Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="documentation/user_guide/what.html">mednoise Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="documentation/user_guide/fundamentals.html">mednoise Fundamentals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="documentation/user_guide/installation.html">mednoise Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="documentation/user_guide/structure.html">mednoise Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="documentation/user_guide/quickstart.html">mednoise Quickstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="documentation/user_guide/tutorials.html">mednoise Tutorials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="documentation/user_guide/workflow.html">mednoise Workflow Integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="documentation/user_guide/help.html">mednoise Help</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="documentation/api_reference/index.html">API Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="documentation/api_reference/usage.html">mednoise API Usage Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="documentation/api_reference/explanation.html">mednoise API Explanations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="documentation/contributors/index.html">Contributing</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="citations">
+<h2>Citations<a class="headerlink" href="#citations" title="Permalink to this headline">¶</a></h2>
+<p>If mednoise is integral to a scientific publication, please cite it. A paper describing mednoise has been published. Here is a ready-made BibTeX entry:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@article</span><span class="p">{</span><span class="n">Bandaru2021</span><span class="p">,</span>
+    <span class="n">doi</span> <span class="o">=</span> <span class="p">{</span><span class="mf">10.21105</span><span class="o">/</span><span class="n">joss</span><span class="mf">.03021</span><span class="p">},</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="p">{</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">doi</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="mf">10.21105</span><span class="o">/</span><span class="n">joss</span><span class="mf">.03021</span><span class="p">},</span>
+    <span class="n">year</span> <span class="o">=</span> <span class="p">{</span><span class="mi">2021</span><span class="p">},</span>
+    <span class="n">publisher</span> <span class="o">=</span> <span class="p">{</span><span class="n">The</span> <span class="n">Open</span> <span class="n">Journal</span><span class="p">},</span>
+    <span class="n">volume</span> <span class="o">=</span> <span class="p">{</span><span class="mi">6</span><span class="p">},</span>
+    <span class="n">number</span> <span class="o">=</span> <span class="p">{</span><span class="mi">60</span><span class="p">},</span>
+    <span class="n">pages</span> <span class="o">=</span> <span class="p">{</span><span class="mi">3021</span><span class="p">},</span>
+    <span class="n">author</span> <span class="o">=</span> <span class="p">{</span><span class="n">Ravi</span> <span class="n">Bandaru</span><span class="p">},</span>
+    <span class="n">title</span> <span class="o">=</span> <span class="p">{</span><span class="n">mednoise</span><span class="p">:</span> <span class="n">medical</span> <span class="n">image</span> <span class="n">processing</span><span class="p">},</span>
+    <span class="n">journal</span> <span class="o">=</span> <span class="p">{</span><span class="n">Journal</span> <span class="n">of</span> <span class="n">Open</span> <span class="n">Source</span> <span class="n">Software</span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="contact">
+<h2>Contact<a class="headerlink" href="#contact" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><strong>Ravi Bandaru</strong></div>
+<div class="line">Email: <a class="reference external" href="mailto:ravi14&#46;bandaru&#37;&#52;&#48;gmail&#46;com">ravi14<span>&#46;</span>bandaru<span>&#64;</span>gmail<span>&#46;</span>com</a></div>
+</div>
+</div>
+</div>
+
+
+              </div>
+              
+              
+              <div class='prev-next-bottom'>
+                
+    <a class='right-next' id="next-link" href="documentation/user_guide/index.html" title="next page">User Guide</a>
+
+              </div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  <footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2021, Ravi Bandaru.<br/>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.3.<br/>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>
