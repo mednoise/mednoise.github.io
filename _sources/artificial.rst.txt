@@ -1,0 +1,7 @@
+artificial module
+=================
+
+.. automodule:: artificial
+   :members:
+   :undoc-members:
+   :show-inheritance:

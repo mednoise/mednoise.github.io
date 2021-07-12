@@ -1,0 +1,62 @@
+====================================
+mednoise - medical image processing
+====================================
+
+-------
+About
+-------
+
+**mednoise** is an open-source python package that contains algorithms to pre-process image metadata to remove noise and enhance the accuracy of machine learning and deep learning models for scientific research.
+
+- **Website:** https://mednoise.github.io
+- **PyPI:** https://pypi.org/project/mednoise/
+- **Documentation:** https://mednoise.github.io/documentation
+- **Source code:** https://github.com/mednoise/mednoise
+- **Bug reports:** https://github.com/mednoise/mednoise/issues
+
+---------
+Focus
+---------
+As an open-source project, **mednoise** strives to improve the quality and power of computational research across the world. To this end, we encourage researchers to contribute their work and algorithms to mednoise so that we can improve, evolve, and change the future of research and medical imaging together.
+
+
+**mednoise** is designed as a tool for pipelines and workflow management systems that rely on medical image metadata (or at least the analysis of that metadata). It aims to create a future of medical imaging that is more accessible and utilizable in the constantly evolving field of medical technology.
+
+
+------------------
+Documentation
+------------------
+.. toctree::
+   :maxdepth: 2
+   
+   documentation/user_guide/index
+   documentation/api_reference/index
+   documentation/contributors/index
+   
+-----------------
+Citations
+-----------------
+
+If mednoise is integral to a scientific publication, please cite it. A paper describing mednoise has been published. Here is a ready-made BibTeX entry::
+
+    @article{Bandaru2021,
+        doi = {10.21105/joss.03021},
+        url = {https://doi.org/10.21105/joss.03021},
+        year = {2021},
+        publisher = {The Open Journal},
+        volume = {6},
+        number = {60},
+        pages = {3021},
+        author = {Ravi Bandaru},
+        title = {mednoise: medical image processing},
+        journal = {Journal of Open Source Software}
+    }
+
+-----------------
+Contact
+-----------------
+
+| **Ravi Bandaru**
+| Email: ravi14.bandaru@gmail.com
+
+

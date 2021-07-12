@@ -1,0 +1,7 @@
+mednoise
+========
+
+.. toctree::
+   :maxdepth: 4
+
+   artificial
