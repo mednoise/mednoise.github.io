@@ -37,19 +37,10 @@ Documentation
 Citations
 -----------------
 
-If mednoise is integral to a scientific publication, please cite it. A paper describing mednoise has been published. Here is a ready-made BibTeX entry::
+If mednoise is integral to a scientific publication, please cite it. A paper describing mednoise has been written. Here is a ready-made BibTeX entry::
 
-    @article{Bandaru2021,
-        doi = {10.21105/joss.03021},
-        url = {https://doi.org/10.21105/joss.03021},
-        year = {2021},
-        publisher = {The Open Journal},
-        volume = {6},
-        number = {60},
-        pages = {3021},
-        author = {Ravi Bandaru},
-        title = {mednoise: medical image processing},
-        journal = {Journal of Open Source Software}
+    @article{
+    COMING SOON
     }
 
 -----------------
