@@ -22,4 +22,4 @@ Noise Removal and ML Accuracy
    :scale: 50 %
    :align: center
 
-   *mednoise** is designed to algorithmically silence noise (boxed in red). 
+   **mednoise** is designed to algorithmically silence noise (boxed in red). 
