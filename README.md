@@ -30,3 +30,6 @@ mednoise uses `pip`.  The installation can be run with:
 
 mednoise is licensed under the `Apache 2.0 License`
 
+##### Acknowledgements:
+
+mednoise documentation created using Sphinx 4.0.3
