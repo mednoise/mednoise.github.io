@@ -1,0 +1,6 @@
+﻿md.manual\_checker
+==================
+
+.. currentmodule:: md
+
+.. autofunction:: manual_checker

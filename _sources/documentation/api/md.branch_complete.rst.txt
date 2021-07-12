@@ -1,0 +1,6 @@
+﻿md.branch\_complete
+===================
+
+.. currentmodule:: md
+
+.. autofunction:: branch_complete

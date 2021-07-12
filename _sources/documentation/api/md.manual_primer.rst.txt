@@ -1,0 +1,6 @@
+﻿md.manual\_primer
+=================
+
+.. currentmodule:: md
+
+.. autofunction:: manual_primer

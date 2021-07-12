@@ -1,0 +1,6 @@
+﻿md.branch\_calculator
+=====================
+
+.. currentmodule:: md
+
+.. autofunction:: branch_calculator

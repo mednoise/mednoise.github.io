@@ -1,0 +1,6 @@
+﻿md.artificial\_isolator
+=======================
+
+.. currentmodule:: md
+
+.. autofunction:: artificial_isolator

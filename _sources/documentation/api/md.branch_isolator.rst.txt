@@ -1,0 +1,6 @@
+﻿md.branch\_isolator
+===================
+
+.. currentmodule:: md
+
+.. autofunction:: branch_isolator

@@ -1,0 +1,6 @@
+﻿md.branch\_analyzer
+===================
+
+.. currentmodule:: md
+
+.. autofunction:: branch_analyzer

@@ -1,0 +1,6 @@
+﻿md.hotspot\_calculator
+======================
+
+.. currentmodule:: md
+
+.. autofunction:: hotspot_calculator

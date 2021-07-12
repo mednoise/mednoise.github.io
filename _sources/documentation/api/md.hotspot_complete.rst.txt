@@ -1,0 +1,6 @@
+﻿md.hotspot\_complete
+====================
+
+.. currentmodule:: md
+
+.. autofunction:: hotspot_complete

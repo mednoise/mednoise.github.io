@@ -1,0 +1,6 @@
+﻿md.manual\_edit
+===============
+
+.. currentmodule:: md
+
+.. autofunction:: manual_edit

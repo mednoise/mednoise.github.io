@@ -1,0 +1,6 @@
+﻿md.artificial\_analyzer
+=======================
+
+.. currentmodule:: md
+
+.. autofunction:: artificial_analyzer

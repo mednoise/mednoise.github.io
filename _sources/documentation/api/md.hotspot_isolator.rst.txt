@@ -1,0 +1,6 @@
+﻿md.hotspot\_isolator
+====================
+
+.. currentmodule:: md
+
+.. autofunction:: hotspot_isolator

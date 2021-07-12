@@ -1,0 +1,6 @@
+﻿md.about
+========
+
+.. currentmodule:: md
+
+.. autofunction:: about

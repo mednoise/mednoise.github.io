@@ -1,0 +1,6 @@
+﻿md.manual\_find
+===============
+
+.. currentmodule:: md
+
+.. autofunction:: manual_find

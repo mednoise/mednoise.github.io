@@ -1,0 +1,6 @@
+﻿md.hotspot\_analyzer
+====================
+
+.. currentmodule:: md
+
+.. autofunction:: hotspot_analyzer

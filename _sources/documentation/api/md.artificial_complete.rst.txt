@@ -1,0 +1,6 @@
+﻿md.artificial\_complete
+=======================
+
+.. currentmodule:: md
+
+.. autofunction:: artificial_complete
