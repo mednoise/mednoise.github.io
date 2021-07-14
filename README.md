@@ -1,9 +1,9 @@
 # <img alt="mednoise" src="/_static/logo.png" height="60">
 
-[![Downloads](https://pepy.tech/badge/mednoise)](https://pepy.tech/project/mednoise)
-[![Version](https://img.shields.io/badge/version-1.2.4-orange)](https://pepy.tech/project/mednoise)
-[![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen)](https://pepy.tech/project/mednoise)
-
+[![Downloads](https://img.shields.io/pypi/dm/mednoise?color=blue&style=flat-square)](https://mednoise.github.io)
+[![Version](https://img.shields.io/pypi/v/mednoise?color=orange&label=version&style=flat-square)](https://mednoise.github.io)
+[![Dependencies](https://img.shields.io/requires/github/mednoise/mednoise?label=dependencies&style=flat-square)](https://mednoise.github.io)
+[![License](https://img.shields.io/github/license/mednoise/mednoise?color=red&label=license&style=flat-square)](https://mednoise.github.io)
 
 ##### Summary 
 
