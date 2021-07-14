@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://mednoise.github.io/</loc>
+  <lastmod>2021-07-14T13:02:45+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://mednoise.github.io/documentation/user_guide/index.html</loc>
+  <lastmod>2021-07-14T13:02:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mednoise.github.io/documentation/api_reference/index.html</loc>
+  <lastmod>2021-07-14T13:02:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mednoise.github.io/documentation/contributors/index.html</loc>
+  <lastmod>2021-07-14T13:02:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mednoise.github.io/documentation/</loc>
+  <lastmod>2021-07-14T13:02:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mednoise.github.io/documentation/user_guide/what.html</loc>
+  <lastmod>2021-07-14T13:02:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mednoise.github.io/documentation/user_guide/fundamentals.html</loc>
+  <lastmod>2021-07-14T13:02:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mednoise.github.io/documentation/user_guide/installation.html</loc>
+  <lastmod>2021-07-14T13:02:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mednoise.github.io/documentation/user_guide/structure.html</loc>
+  <lastmod>2021-07-14T13:02:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mednoise.github.io/documentation/user_guide/quickstart.html</loc>
+  <lastmod>2021-07-14T13:02:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mednoise.github.io/documentation/user_guide/tutorials.html</loc>
+  <lastmod>2021-07-14T13:02:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mednoise.github.io/documentation/user_guide/workflow.html</loc>
+  <lastmod>2021-07-14T13:02:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mednoise.github.io/documentation/user_guide/help.html</loc>
+  <lastmod>2021-07-14T13:02:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mednoise.github.io/documentation/api_reference/usage.html</loc>
+  <lastmod>2021-07-14T13:02:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mednoise.github.io/documentation/api_reference/explanation.html</loc>
+  <lastmod>2021-07-14T13:02:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mednoise.github.io/index.html</loc>
+  <lastmod>2021-07-14T13:02:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mednoise.github.io/documentation/api_reference/api/md.about.html</loc>
+  <lastmod>2021-07-14T13:02:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mednoise.github.io/documentation/api_reference/api/md.manual_merge.html</loc>
+  <lastmod>2021-07-14T13:02:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mednoise.github.io/documentation/api_reference/api/md.manual_find.html</loc>
+  <lastmod>2021-07-14T13:02:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mednoise.github.io/documentation/api_reference/api/md.manual_edit.html</loc>
+  <lastmod>2021-07-14T13:02:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mednoise.github.io/documentation/api_reference/api/md.manual_primer.html</loc>
+  <lastmod>2021-07-14T13:02:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mednoise.github.io/documentation/api_reference/api/md.hotspot_complete.html</loc>
+  <lastmod>2021-07-14T13:02:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mednoise.github.io/documentation/api_reference/api/md.hotspot_calculator.html</loc>
+  <lastmod>2021-07-14T13:02:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mednoise.github.io/documentation/api_reference/api/md.hotspot_analyzer.html</loc>
+  <lastmod>2021-07-14T13:02:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mednoise.github.io/documentation/api_reference/api/md.hotspot_isolator.html</loc>
+  <lastmod>2021-07-14T13:02:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mednoise.github.io/documentation/api_reference/api/md.branch_complete.html</loc>
+  <lastmod>2021-07-14T13:02:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mednoise.github.io/documentation/api_reference/api/md.branch_calculator.html</loc>
+  <lastmod>2021-07-14T13:02:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mednoise.github.io/documentation/api_reference/api/md.branch_analyzer.html</loc>
+  <lastmod>2021-07-14T13:02:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mednoise.github.io/documentation/api_reference/api/md.branch_isolator.html</loc>
+  <lastmod>2021-07-14T13:02:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mednoise.github.io/documentation/api_reference/api/md.artificial_complete.html</loc>
+  <lastmod>2021-07-14T13:02:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mednoise.github.io/documentation/api_reference/api/md.artificial_calculator.html</loc>
+  <lastmod>2021-07-14T13:02:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mednoise.github.io/documentation/api_reference/api/md.artificial_analyzer.html</loc>
+  <lastmod>2021-07-14T13:02:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mednoise.github.io/documentation/api_reference/api/md.artificial_isolator.html</loc>
+  <lastmod>2021-07-14T13:02:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
