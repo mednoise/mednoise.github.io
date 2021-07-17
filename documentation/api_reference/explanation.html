@@ -198,26 +198,6 @@
      md.branch_isolator
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="api/md.artificial_complete.html">
-     md.artificial_complete
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="api/md.artificial_calculator.html">
-     md.artificial_calculator
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="api/md.artificial_analyzer.html">
-     md.artificial_analyzer
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="api/md.artificial_isolator.html">
-     md.artificial_isolator
-    </a>
-   </li>
   </ul>
  </li>
  <li class="toctree-l1 current active">
@@ -256,9 +236,6 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#mednoise-artificial">
-   mednoise Artificial
-  </a>
  </li>
 </ul>
 
@@ -291,10 +268,6 @@
 <h2>mednoise Branch<a class="headerlink" href="#mednoise-branch" title="Permalink to this headline">¶</a></h2>
 <p>The <code class="docutils literal notranslate"><span class="pre">branch</span></code> algorithm works under the fundamental assumption that the region of clinical significance on an image is easily identifiable and consistent across various similar-sized images. When given a pixel coordinate, <code class="docutils literal notranslate"><span class="pre">branch</span></code> iteratively finds all surrounding pixels, branching out across the entire figure and eventually selecting the entire figure that the input pixel was a part of. By taking the complement of this figure, the regions of unremarkable clinical significance are easily extrapolated. <code class="docutils literal notranslate"><span class="pre">branch</span></code> takes these regions and fills them with a constant color to silence the image’s noise.</p>
 </div>
-<div class="section" id="mednoise-artificial">
-<h2>mednoise Artificial<a class="headerlink" href="#mednoise-artificial" title="Permalink to this headline">¶</a></h2>
-<p>The <code class="docutils literal notranslate"><span class="pre">artificial</span></code> algorithm works under the fundamental assumption that areas of irrelevant noise will be similar across multiple images. Thus, by receiving a user-selected input matrix of irrelevant noise, the <code class="docutils literal notranslate"><span class="pre">artificial</span></code> algorithm searches all input images for a similar output matrix using a Jaccard-similarity function. This similarity function is one of the reasons why this algorithm is the most versatile out of the three. It can handle various image sizes and even transposed image structures. By isolating areas of insignificant noise and removing them, <code class="docutils literal notranslate"><span class="pre">artificial</span></code> quickly creates noiseless images without needing tuning (unlike <code class="docutils literal notranslate"><span class="pre">branch</span></code> and <code class="docutils literal notranslate"><span class="pre">hotspot</span></code>).</p>
-</div>
 </div>
 
 
@@ -303,7 +276,7 @@
               
               <div class='prev-next-bottom'>
                 
-    <a class='left-prev' id="prev-link" href="api/md.artificial_isolator.html" title="previous page">md.artificial_isolator</a>
+    <a class='left-prev' id="prev-link" href="api/md.branch_isolator.html" title="previous page">md.branch_isolator</a>
     <a class='right-next' id="next-link" href="../contributors/index.html" title="next page">Contributing</a>
 
               </div>
