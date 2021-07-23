@@ -2,7 +2,6 @@
 
 [![Downloads](https://img.shields.io/pypi/dm/mednoise?color=blue&style=flat-square)](https://pypistats.org/packages/mednoise)
 [![Version](https://img.shields.io/pypi/v/mednoise?color=orange&label=version&style=flat-square)](https://pypi.org/project/mednoise/)
-[![Dependencies](https://img.shields.io/requires/github/mednoise/mednoise?label=dependencies&style=flat-square)](https://pypi.org/project/mednoise/)
 [![License](https://img.shields.io/github/license/mednoise/mednoise?color=red&label=license&style=flat-square)](https://github.com/mednoise/mednoise/blob/main/LICENSE)
 [![Paper](https://img.shields.io/badge/JOSS-Submitted-blueviolet?style=flat-square)](https://joss.theoj.org/papers/e334cd1cbcdde8c9aa37254eb5c6bfec/)
 
